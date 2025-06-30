@@ -1,0 +1,80 @@
+   1 git config --list
+   2 mkdir ejercicio-git
+   3 cd .\ejercicio-git\
+   4 git init
+   5 echo "ArchivoEjemplo" > exampleFile.txt
+   6 ls
+   7 cat .\exampleFile.txt
+   8 git status
+   9 git add .\exampleFile.txt
+  10 git status
+  11 git reset .\exampleFile.txt
+  12 git status
+  13 git add .
+  14 git status
+  15 git commit -m "1st Commit - Adding exampleFile.txt"
+  16 git status
+  17 git checkout -b branch1
+  18 git branch
+  19 echo "Cambio realizado en la rama 'branch1'" >> .\exampleFile.txt
+  20 cat .\exampleFile.txt
+  21 git status
+  22 git add .
+  23 git commit -m "1st Commit - Adding exampleFile.txt"
+  24 cat .\exampleFile.txt
+  25 git checkout master
+  26 cat .\exampleFile.txt
+  27 git branch
+  28 git merge branch1
+  29 git branch
+  30 cat .\exampleFile.txt
+  31 git remote add origin https://github.com/alvaro-max-git/ejercicio-git
+  32 git branch
+  33 git push --set-upstream origin master
+  34 cd ..
+  35 ls
+  36 git clone https://github.com/alvaro-max-git/PruebaGitDiego
+  37 cd .\PruebaGitDiego\
+  38 ls
+  39 git checkout -b cambios-Alvaro
+  40 echo "Álvaro Muñoz estuvo aquí haciendo cambios" >> .\exampleFile.txt
+  41 cat .\exampleFile.txt
+  42 git push origin cambios-Alvaro
+  43 git commit -m "Modificado archivo.txt con una pequeña aportación"
+  44 git add .
+  45 git commit -m "Modificado archivo.txt con una pequeña aportación"
+  46 git status
+  47 git push origin cambios-Alvaro
+  48 cat .\exampleFile.txt
+  49 cat .\exampleFile.txt
+  50 git add .
+  51 git commit -m "arreglado archivo .txt"
+  52 git branch
+  53 git push origin cambios-Alvaro
+  54 git pull
+  55 git checkout master
+  56 git pull
+  57 git pull origin main
+  58 cat .\exampleFile.txt
+  59 git pull origin master
+  60 cat .\exampleFile.txt
+  61 git remote add upstream https://github.com/dcarmonr-nttdata/PruebaGit
+  62 git fetch upstream
+  63 ls
+  64 cat .\exampleFile.txt
+  65 git branch
+  66 git checkout master
+  67 ls
+  68 cat .\exampleFile.txt
+  69 git log
+  70 git merge upstream/master
+  71 cat .\exampleFile.txt
+  72 cat .\exampleFile.txt
+  73 git branch
+  74 git commit -m "arreglado el archivo txt"
+  75 git add .
+  76 git commit -m "arreglado el archivo txt"
+  77 git branch
+  78 git checkout cambios-Alvaro
+  79 git checkout master
+  80 git push
